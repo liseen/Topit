@@ -71,6 +71,7 @@ func createNewWindow(display: SCDisplay, window: SCWindow, opacity: Double? = ni
     panel.contentView = contentView
     panel.title = title
     panel.level = .floating
+    panel.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary]
     panel.backgroundColor = .clear
     panel.titleVisibility = .hidden
     panel.titlebarAppearsTransparent = true
